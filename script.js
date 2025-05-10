@@ -5,7 +5,7 @@ document.getElementById
 
 document.getElementById
 ("com").addEventListener("click",()=>{
-    window.location.href="com.html";
+    window.location.href="fields.html";
 })
 
 document.getElementById
