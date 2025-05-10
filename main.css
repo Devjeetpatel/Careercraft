@@ -193,17 +193,19 @@ button:hover {
     border-radius: 30px 30px;
     background-color: #1e1e1e;
     box-shadow: 0 0 10px rgb(192, 234, 255);
+    cursor: pointer;
 }
 
-.field>p {
+.field {
     display: flex;
     justify-content: center;
+    
 }
 
-.field-name {
-    padding-left: 50px;
-    padding-top: 30px;
-}
+/* .field-name {
+    padding-left: 70px;
+    padding-top: 50px;
+} */
 
 .img-size {
     height: 250px;
