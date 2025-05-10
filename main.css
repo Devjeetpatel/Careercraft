@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+
+}
+
+html,
+body {
+    background-color: #2a2a2a;
+    color: #fff;
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0;
+    height: 100vh; */
+}
+
+header {
+    width: 100%;
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    /* border-bottom: 2px solid rgb(192, 234, 255); */
+    /* box-shadow: 0px 2px 15px rgb(192, 234, 255); */
+    position: sticky;
+    z-index: 1000;
+    /* top: 0; */
+    left: 0;
+  transition: top 0.4s;
+}
+
+h1 {
+    text-shadow: 1px 1px 40px rgb(255, 255, 255);
+}
+
+nav {
+    margin: 25px auto;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.lblue {
+    color: rgb(192, 234, 255);
+    text-shadow: 1px 1px 40px rgb(132, 214, 255);
+}
+
+.blue {
+    color: rgb(163, 224, 255);
+    /* text-shadow: 1px 1px 30px rgb(132, 214, 255); */
+
+}
+
+/* 
+.glow {
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5);
+
+} */
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: rgb(192, 234, 255);
+
+}
+
+main {
+    /* background-color: #1e1e1e; */
+    min-height: 80vh;
+    /* display: flex; */
+    justify-content: center;
+    background-color: #2a2a2a;
+    /* Slightly lighter than header */
+
+}
+
+.web-detail {
+    font-size: 20px;
+    margin: 18px;
+}
+
+.line1 {
+    display: block;
+    padding: 35px;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+button {
+    height: 18vh;
+    width: 55vmin;
+    display: inline-block;
+    margin: 35px;
+    padding: 35px;
+    border: 0px solid rgba(192, 234, 255, 0.695);
+    border-radius: 38px;
+    box-shadow: 0px 0px 35px rgb(192, 234, 255);
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    background: #2a2a2a;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.options {
+    margin: 50px auto;
+}
+
+/* button {
+    display: block;
+    width: 20vw;
+    margin: 30px auto;
+    padding: 10px;
+    background: #2a2a2a;
+    border: 1px solid white;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    text-shadow: 0px 0px 20px #fff; 
+    }*/
+
+
+button:hover {
+    border-radius: 38px;
+    background: rgb(192, 234, 255);
+    /* color: rgb(192, 234, 255); */
+    /* box-shadow: 0px 0px 20px rgb(192, 234, 255); */
+    color: #1e1e1e;
+
+}
+
+
+.content {
+    display: grid;
+    align-items: center;
+    /* border: 1px solid white;
+    margin: 50px;
+    border-radius: 25px; */
+    /* margin: 50px 80px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 50px; */
+    /* font-size: 2em; */
+}
+
+
+.class-question {
+    font-size: 24px;
+}
+
+.class-details {
+    margin: 12px;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+}
+
+.fields {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.field {
+    height: 380px;
+    width: 340px;
+    /* border: 2px solid white; */
+    border-radius: 30px 30px;
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px rgb(192, 234, 255);
+}
+
+.field>p {
+    display: flex;
+    justify-content: center;
+}
+
+.field-name {
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.img-size {
+    height: 250px;
+    width: 340px;
+    object-fit: cover;
+    border-radius: 30px 30px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    /* position: absolute; */
+    left: 0;
+    bottom: 0;
+    /* width: 100%; */
+    /* margin-top: 55px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .typing-text {
+    margin-left: 120px;
+    display: block;
+    align-items: center;
+    width: 50ch;
+    animation: typing 5s steps(50), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+}
+
+@keyframes typing {
+    from {
+        width: 0;   
+    }
+}
+
+@keyframes blink {
+    80% {
+        border-color: transparent
+    }
+} */
