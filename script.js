@@ -1,24 +1,6 @@
-// document.getElementById
-// ("arts").addEventListener("click",()=>{
-//     window.location.href="arts.html";
-// })
+{
 
-// document.getElementById
-// ("com").addEventListener("click",()=>{
-//     window.location.href="fields.html";
-// })
-
-// document.getElementById
-// ("sci").addEventListener("click",()=>{
-//     window.location.href="arts.html";
-// })
-
-// document.getElementById
-// ("dip").addEventListener("click",()=>{
-//     window.location.href="dip.html";
-// })
-
-document.getElementById("com").addEventListener("click", () => {
+  document.getElementById("com").addEventListener("click", () => {
   localStorage.setItem("selectedStream", "Commerce");
   window.location.href = "fields.html";
 });
@@ -38,5 +20,19 @@ document.getElementById("dip").addEventListener("click", () => {
   window.location.href = "fields.html";
 });
 
+}
+
+// {
+//   document.getElementById("af").addEventListener("click",()=>{
+//   localStorage.setItem("selectedfield","Acc&fin");
+//   window.location.href = "choice.html";
+//   });
+
+//   document.getElementById("bm").addEventListener("click",()=>{
+//   localStorage.setItem("selectedfield","bus&man");
+//   window.location.href = "choice.html";
+//   });
+// }
 
 
+ 

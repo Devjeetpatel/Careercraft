@@ -1,27 +1,23 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const stream = localStorage.getItem("selectedStream");
-    console.log("Selected stream:", stream);
+document.addEventListener('DOMContentLoaded', function () {
+    const streamNameElement = document.getElementById('stream-name');
+    const fieldsContainer = document.getElementById('fields-container');
 
-    const streamNameEl = document.getElementById("stream-name");
-    if (!streamNameEl) {
-        console.error("Element #stream-name not found");
-        return;
-    }
+    const selectedStream = localStorage.getItem('selectedStream');
 
-    streamNameEl.textContent = stream;
+    streamNameElement.textContent = selectedStream;
 
     const fieldsData = {
         Commerce: [
-            { title: "Accounting & Finance", image: "assets/acc&finance.webp" },
-            { title: "Business & Management", image: "assets/business.png" },
-            { title: "Banking & Insurance", image: "assets/business.png" },
-            { title: "Law", image: "assets/business.png" },
-            { title: "Economics & Statistics", image: "assets/business.png" },
-            { title: "Information Technology & Digital Media", image: "assets/business.png" },
-            { title: "Media & Communication", image: "assets/business.png" },
-            { title: "Hotel, Travel & Hospitality Management", image: "assets/business.png" },
-            { title: " Creative Fields", image: "assets/business.png" },
-            { title: " Education & Teaching", image: "assets/business.png" }
+            { title: "Accounting & Finance", image: "assets/acc&finance.webp", id: "af" },
+            { title: "Business & Management", image: "assets/business.png", id: "bm" },
+            { title: "Banking & Insurance", image: "assets/business.png", id: "bi" },
+            { title: "Law", image: "assets/business.png", id: "law" },
+            { title: "Economics & Statistics", image: "assets/business.png", id: "es" },
+            { title: "Information Technology & Digital Media", image: "assets/business.png", id: "itdm" },
+            { title: "Media & Communication", image: "assets/business.png", id: "mc" },
+            { title: "Hotel, Travel & Hospitality Management", image: "assets/business.png", id: "hthm" },
+            { title: " Creative Fields", image: "assets/business.png", id: "cf" },
+            { title: " Education & Teaching", image: "assets/business.png", id: "et" }
         ],
         Science: [
             { title: "Engineering & Technology (PCM)", image: "assets/engineering.webp" },
@@ -50,38 +46,44 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     };
 
-    const container = document.getElementById("fields-container");
-    if (!container) {
-        console.error("Element #fields-container not found");
-        return;
-    }
+    // --- Generate Field Elements ---
+    if (fieldsData[selectedStream]) {
+        fieldsData[selectedStream].forEach(field => {
+            const fieldElement = document.createElement('div');
+            fieldElement.classList.add('field');
 
-    const fields = fieldsData[stream] || [];
-    fields.forEach((field) => {
-        const div = document.createElement("div");
-        div.className = "field";
-        div.innerHTML = `
-      <article class="">
+            fieldElement.innerHTML = `
+                <article class="">
                     <div class="cover-image">
-                        <a href="choice.html" title="" id="${field.title}">
+                        <a title="" id="${field.id}">
                             <img data-perfmatters-preload class="img-size" src="${field.image}" class="" alt="${field.title}" >
                         </a>
-
                         <div class="entry-category">
                             <a href="" class="gridlove-cat gridlove-cat-3"></a>
                             <a href="" class="gridlove-cat gridlove-cat-2"></a>
                         </div>
                     </div>
-
                     <div class="box-inner-p">
                         <div class="">
                             <p class="">
-                                <a href="choice.html" id="${field.title}">${field.title}</a>
+                                <a id="field-link-${field.id}">${field.title}</a>
                             </p>
                         </div>
                     </div>
                 </article>
-    `;
-        container.appendChild(div);
-    });
+                `;
+             
+            // a = ${field.title};
+
+            // Add event listener to the entire fieldElement div
+            fieldElement.addEventListener('click', function () {
+                localStorage.setItem('selectedField', field.title); // Store the title
+                window.location.href = 'choice.html';
+            });
+
+            fieldsContainer.appendChild(fieldElement);
+        });
+    } else {
+        fieldsContainer.textContent = 'No fields found for this stream.';
+    }
 });
