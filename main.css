@@ -217,6 +217,12 @@ button:hover {
 }
 
 
+.box-inner-p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35px;
+}
 
 
 footer {
