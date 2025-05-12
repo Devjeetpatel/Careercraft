@@ -1,3 +1,9 @@
+
+document.getElementById
+("back").addEventListener("click",()=>{
+    window.location.href="choice.html";
+})
+
 document.addEventListener('DOMContentLoaded', function () {
     const selectedFieldElement = document.getElementById('selected-field-course');
     const coursesListContainer = document.getElementById('courses-list');
@@ -8,47 +14,69 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const coursesData = {
             "Accounting & Finance": [
-                "B.Com in Accounting and Finance",
-                "MBA in Finance",
-                "Certified Public Accountant (CPA)",
-                "Chartered Financial Analyst (CFA)"
+                { title: "B.Com in Accounting and Finance", Info: "vhbhkrbhbshkbvhkdfb hkv hfe vh" },
+                { title: "MBA in Finance", Info: "vhbhkrbhbshkbvhkdfb hkv hfe vh" },
+                { title: "Certified Public Accountant (CPA)", Info: "vhbhkrbhbshkbvhkdfb hkv hfe vh" },
+                { title: "Chartered Financial Analyst (CFA)", Info: "vhbhkrbhbshkbvhkdfb hkv hfe vh" },
             ],
             "Business & Management": [
-                "BBA (Bachelor of Business Administration)",
-                "MBA (Master of Business Administration)",
-                "Bachelor of Management Studies (BMS)",
-                "PGDM (Post Graduate Diploma in Management)"
+                { title: "BBA (Bachelor of Business Administration)", Info: "vhbhkrbhbshkbvhkdfb hkv hfe vh" },
+                { title: "MBA (Master of Business Administration)", Info: "vhbhkrbhbshkbvhkdfb hkv hfe vh" },
+                { title: "Bachelor of Management Studies (BMS)", Info: "vhbhkrbhbshkbvhkdfb hkv hfe vh" },
+                { title: "PGDM (Post Graduate Diploma in Management)", Info: "vhbhkrbhbshkbvhkdfb hkv hfe vh" },
             ],
             "Law": [
-                "BA LLB (Bachelor of Arts and Bachelor of Laws)",
-                "BSc LLB (Bachelor of Science and Bachelor of Laws)",
-                "LLB (Bachelor of Laws)"
+                { title: "BA LLB (Bachelor of Arts and Bachelor of Laws)", Info: "vhbhkrbhbshkbvhkdfb hkv hfe vh" },
+                { title: "BSc LLB (Bachelor of Science and Bachelor of Laws)", Info: "vhbhkrbhbshkbvhkdfb hkv hfe vh" },
+                { title: "LLB (Bachelor of Laws)", Info: "vhbhkrbhbshkbvhkdfb hkv hfe vh" },
             ],
             "Engineering & Technology (PCM)": [
-                "Bachelor of Technology (B.Tech) in various specializations",
-                "Bachelor of Engineering (B.E.) in various specializations",
-                "Diploma in Engineering"
+                { title: "Bachelor of Technology (B.Tech) in various specializations", Info: "vhbhkrbhbshkbvhkdfb hkv hfe vh" },
+                { title: "Bachelor of Engineering (B.E.) in various specializations", Info: "vhbhkrbhbshkbvhkdfb hkv hfe vh" },
+                { title: "Diploma in Engineering", Info: "vhbhkrbhbshkbvhkdfb hkv hfe vh" },
             ],
             "Medical & Allied Health Sciences (PCB)": [
-                "MBBS (Bachelor of Medicine and Bachelor of Surgery)",
-                "BDS (Bachelor of Dental Surgery)",
-                "BSc Nursing",
-                "B.Pharmacy"
+                { title: "MBBS (Bachelor of Medicine and Bachelor of Surgery)", Info: "vhbhkrbhbshkbvhkdfb hkv hfe vh" },
+                { title: "BDS (Bachelor of Dental Surgery)", Info: "vhbhkrbhbshkbvhkdfb hkv hfe vh" },
+                { title: "BSc Nursing", Info: "vhbhkrbhbshkbvhkdfb hkv hfe vh" },
+                { title: "B.Pharmacy", Info: "vhbhkrbhbshkbvhkdfb hkv hfe vh" },
             ],
         };
 
+        // if (coursesData[selectedField]) {
+        //     const courses = coursesData[selectedField];
+        //     courses.forEach(course => {
+        //     const ul = document.createElement('ul');
+        //         const li = document.createElement('li');
+        //         li.textContent = course;
+        //         ul.appendChild(li);
+        //     });
+        //     coursesListContainer.appendChild(ul);
+        // } else {
+        //     coursesListContainer.textContent = `No specific courses found for ${selectedField}.`;
+        // }
+
         if (coursesData[selectedField]) {
-            const courses = coursesData[selectedField];
-            const ul = document.createElement('ul');
-            courses.forEach(course => {
-                const li = document.createElement('li');
-                li.textContent = course;
-                ul.appendChild(li);
+            coursesData[selectedField].forEach(field => {
+                const course = document.createElement('div');
+                course.classList.add('field');
+
+                course.innerHTML = `
+                <article class="">
+                    <div class="course-title">
+                            <p class="course-name" >${field.title}</p>
+                    </div>
+                    <div class="box-inner-p">
+                        <div class="">
+                            <p class="">${field.Info}</p>
+                        </div>
+                    </div>
+                </article>
+                `;
+                coursesListContainer.appendChild(course);
+
             });
-            coursesListContainer.appendChild(ul);
-        } else {
-            coursesListContainer.textContent = `No specific courses found for ${selectedField}.`;
-        }
+        };
 
     } else {
         coursesListContainer.textContent = 'No field selected. Please go back and select a field.';

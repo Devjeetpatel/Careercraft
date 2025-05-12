@@ -1,3 +1,9 @@
+document.getElementById
+("back").addEventListener("click",()=>{
+    window.location.href="choice.html";
+})
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const selectedFieldElement = document.getElementById('selected-field-career');
     const careersListContainer = document.getElementById('careers-list');

@@ -28,7 +28,7 @@ header {
     z-index: 1000;
     /* top: 0; */
     left: 0;
-  transition: top 0.4s;
+    transition: top 0.4s;
 }
 
 h1 {
@@ -37,6 +37,13 @@ h1 {
 
 nav {
     margin: 25px auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 20vw 60vw 20vw;
+    justify-items: center;
+    align-items: center;
 }
 
 nav ul {
@@ -102,7 +109,7 @@ main {
     letter-spacing: 1px;
 }
 
-button {
+.stream-button {
     height: 18vh;
     width: 55vmin;
     display: inline-block;
@@ -138,7 +145,7 @@ button {
     }*/
 
 
-button:hover {
+.stream-button:hover:hover {
     border-radius: 38px;
     background: rgb(192, 234, 255);
     /* color: rgb(192, 234, 255); */
@@ -149,7 +156,7 @@ button:hover {
 
 
 .content {
-    display: grid;
+    /* display: grid; */
     align-items: center;
     /* border: 1px solid white;
     margin: 50px;
@@ -194,12 +201,14 @@ button:hover {
     background-color: #1e1e1e;
     box-shadow: 0 0 10px rgb(192, 234, 255);
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
 
 .field {
     display: flex;
     justify-content: center;
-    
+
 }
 
 /* .field-name {
@@ -216,7 +225,6 @@ button:hover {
     justify-content: center;
 }
 
-
 .box-inner-p {
     display: flex;
     align-items: center;
@@ -224,6 +232,38 @@ button:hover {
     margin: 35px;
 }
 
+.course-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(192, 234, 255);
+    display: flex;
+    justify-content: center;
+    padding: 44px;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35px;
+}
+
+#back {
+    height: 45px;
+    width: 45px;
+    /* background-color: #1e1e1e; */
+    background-color: #2a2a2a;
+    border: none;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.my-arror {
+    color: rgb(192, 234, 255)
+}
 
 footer {
     background-color: #1e1e1e;

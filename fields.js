@@ -1,3 +1,13 @@
+
+
+document.getElementById
+("back").addEventListener("click",()=>{
+    window.location.href="index.html";
+})
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const streamNameElement = document.getElementById('stream-name');
     const fieldsContainer = document.getElementById('fields-container');
@@ -46,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
         ]
     };
 
-    // --- Generate Field Elements ---
     if (fieldsData[selectedStream]) {
         fieldsData[selectedStream].forEach(field => {
             const fieldElement = document.createElement('div');
@@ -75,9 +84,9 @@ document.addEventListener('DOMContentLoaded', function () {
              
             // a = ${field.title};
 
-            // Add event listener to the entire fieldElement div
+            // add event listener to the entire fieldElement div
             fieldElement.addEventListener('click', function () {
-                localStorage.setItem('selectedField', field.title); // Store the title
+                localStorage.setItem('selectedField', field.title); 
                 window.location.href = 'choice.html';
             });
 
