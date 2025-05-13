@@ -14,49 +14,54 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const careersData = {
             "Accounting & Finance": [
-                "Accountant",
-                "Financial Analyst",
-                "Auditor",
-                "Investment Banker"
+                { title: "Accountant"},
+                { title: "Financial Analyst"},
+                { title: "Auditor"},
+                { title: "Investment Banker"}
             ],
             "Business & Management": [
-                "Business Analyst",
-                "Marketing Manager",
-                "Human Resources Manager",
-                "Operations Manager"
+                { title: "Business Analyst"},
+                { title: "Marketing Manager"},
+                { title: "Human Resources Manager"},
+                { title: "Operations Manager"}
             ],
             "Law": [
-                "Lawyer",
-                "Judge",
-                "Legal Advisor",
-                "Solicitor"
+                { title: "Lawyer"},
+                { title: "Judge"},
+                { title: "Legal Advisor"},
+                { title: "Solicitor"}
             ],
             "Engineering & Technology (PCM)": [
-                "Software Engineer",
-                "Mechanical Engineer",
-                "Electrical Engineer",
-                "Civil Engineer"
+                { title: "Software Engineer"},
+                { title: "Mechanical Engineer"},
+                { title: "Electrical Engineer"},
+                { title: "Civil Engineer"}
             ],
             "Medical & Allied Health Sciences (PCB)": [
-                "Doctor",
-                "Dentist",
-                "Nurse",
-                "Pharmacist"
+                { title: "Doctor"},
+                { title: "Dentist"},
+                { title: "Nurse"},
+                { title: "Pharmacist"}
             ],
         };
 
+      
         if (careersData[selectedField]) {
-            const careers = careersData[selectedField];
-            const ul = document.createElement('ul');
-            careers.forEach(career => {
-                const li = document.createElement('li');
-                li.textContent = career;
-                ul.appendChild(li);
+            careersData[selectedField].forEach(field => {
+                const careers = document.createElement('div');
+                careers.classList.add('field');
+
+                careers.innerHTML = `
+                <article class="">
+                    <div class="course-title">
+                            <p class="course-name" >${field.title}</p>
+                    </div>
+                </article>
+                `;
+                careersListContainer.appendChild(careers);
+
             });
-            careersListContainer.appendChild(ul);
-        } else {
-            careersListContainer.textContent = `No specific careers found for ${selectedField}.`;
-        }
+        };
 
     } else {
         careersListContainer.textContent = 'No field selected. Please go back and select a field.';

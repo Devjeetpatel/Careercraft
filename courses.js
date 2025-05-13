@@ -43,19 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
             ],
         };
 
-        // if (coursesData[selectedField]) {
-        //     const courses = coursesData[selectedField];
-        //     courses.forEach(course => {
-        //     const ul = document.createElement('ul');
-        //         const li = document.createElement('li');
-        //         li.textContent = course;
-        //         ul.appendChild(li);
-        //     });
-        //     coursesListContainer.appendChild(ul);
-        // } else {
-        //     coursesListContainer.textContent = `No specific courses found for ${selectedField}.`;
-        // }
-
         if (coursesData[selectedField]) {
             coursesData[selectedField].forEach(field => {
                 const course = document.createElement('div');
