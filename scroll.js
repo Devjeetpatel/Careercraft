@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (prevScrollPos > currentScrollPos) {
       navbar.style.top = "0";
     } else {
-      navbar.style.top = "-150px";
+      navbar.style.top = "-180px";
     }
 
     prevScrollPos = currentScrollPos;
