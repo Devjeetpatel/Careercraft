@@ -1,12 +1,12 @@
 
-
+// back button code
 document.getElementById
-("back").addEventListener("click",()=>{
-    window.location.href="index.html";
-})
+    ("back").addEventListener("click", () => {
+        window.location.href = "index.html";
+    })
 
 
-
+// fetch stored data from Script.js and suggest fields according
 
 document.addEventListener('DOMContentLoaded', function () {
     const streamNameElement = document.getElementById('stream-name');
@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     streamNameElement.textContent = selectedStream;
 
+    // data to display and its id to store it
     const fieldsData = {
         Commerce: [
             { title: "Accounting & Finance", image: "assets/acc&finance.webp", id: "af" },
@@ -45,9 +46,16 @@ document.addEventListener('DOMContentLoaded', function () {
             // { title: "", image: "assets/it.webp" }
         ],
         Arts: [
-            { title: "Psychology", image: "assets/psychology.webp" },
-            { title: "Sociology", image: "assets/sociology.webp" },
-            { title: "Literature", image: "assets/literature.webp" }
+            { title: "Humanities & Social Sciences", image: "assets/it.webp" },
+            { title: "Languages & Literature", image: "assets/it.webp" },
+            { title: "Fine Arts & Performing Arts", image: "assets/it.webp" },
+            { title: "Communication & Media", image: "assets/it.webp" },
+            { title: "Education", image: "assets/it.webp" },
+            { title: "Law and Legal Studies", image: "assets/it.webp" }
+            // { title: "", image: "assets/it.webp" }
+            // { title: "", image: "assets/it.webp" }
+
+
         ],
         Diploma: [
             { title: "Mechanical", image: "assets/mechanical.webp" },
@@ -55,6 +63,8 @@ document.addEventListener('DOMContentLoaded', function () {
             { title: "Civil", image: "assets/civil.webp" }
         ]
     };
+
+    // used to create element and display it
 
     if (fieldsData[selectedStream]) {
         fieldsData[selectedStream].forEach(field => {
@@ -81,15 +91,13 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                 </article>
                 `;
-             
-            // a = ${field.title};
 
-            // add event listener to the entire fieldElement div
+            // again stores selected field for further use
             fieldElement.addEventListener('click', function () {
-                localStorage.setItem('selectedField', field.title); 
+                localStorage.setItem('selectedField', field.title);
                 window.location.href = 'choice.html';
             });
-
+            
             fieldsContainer.appendChild(fieldElement);
         });
     } else {

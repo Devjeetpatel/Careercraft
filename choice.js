@@ -1,16 +1,16 @@
-
+// back button function
 document.getElementById
 ("back").addEventListener("click",()=>{
     window.location.href="fields.html";
 })
 
-
+// selected field will be saved for further process not used here
 document.addEventListener('DOMContentLoaded', function () {
     const fieldNameElement = document.getElementById('field');
     const choiceContainer = document.getElementById('content');
 
     const selectedField = localStorage.getItem('selectedField');
-
+    // if field is selected then show option
     if (selectedField) {
         fieldNameElement.textContent = selectedField;
 

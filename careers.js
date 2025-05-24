@@ -1,9 +1,10 @@
+// back button funtion
 document.getElementById
 ("back").addEventListener("click",()=>{
     window.location.href="choice.html";
 })
 
-
+// calls stored field and suggest careers
 document.addEventListener('DOMContentLoaded', function () {
     const selectedFieldElement = document.getElementById('selected-field-career');
     const careersListContainer = document.getElementById('careers-list');
@@ -12,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (selectedField) {
         selectedFieldElement.textContent = selectedField;
 
+// data to display accordingly
         const careersData = {
             "Accounting & Finance": [
                 { title: "Accountant"},
@@ -45,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
             ],
         };
 
-      
+    //   data display function
         if (careersData[selectedField]) {
             careersData[selectedField].forEach(field => {
                 const careers = document.createElement('div');

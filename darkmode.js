@@ -11,21 +11,13 @@ const disableDarkmode = () => {
   localStorage.setItem('darkmode', null)
 }
 
-// const applySystemTheme = () => {
-//   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-//     enableDarkmode();
-//   } else {
-//     disableDarkmode();
-//   }
-// };
-
-// applySystemTheme();
-
-// window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applySystemTheme);
-
 if(darkmode === "active") enableDarkmode()
 
 themeSwitch.addEventListener("click", () => {
   darkmode = localStorage.getItem('darkmode')
   darkmode !== "active" ? enableDarkmode() : disableDarkmode()
 })
+
+
+// this code is for dark/light mode button
+

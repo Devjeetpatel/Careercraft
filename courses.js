@@ -1,9 +1,10 @@
-
+// back button function
 document.getElementById
 ("back").addEventListener("click",()=>{
     window.location.href="choice.html";
 })
 
+// calls selectedField data and suggest course accordingly
 document.addEventListener('DOMContentLoaded', function () {
     const selectedFieldElement = document.getElementById('selected-field-course');
     const coursesListContainer = document.getElementById('courses-list');
@@ -12,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (selectedField) {
         selectedFieldElement.textContent = selectedField;
 
+        // course data to display
         const coursesData = {
             "Accounting & Finance": [
                 { title: "B.Com in Accounting and Finance", Info: "vhbhkrbhbshkbvhkdfb hkv hfe vh" },
@@ -42,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 { title: "B.Pharmacy", Info: "vhbhkrbhbshkbvhkdfb hkv hfe vh" },
             ],
         };
-
+        // display function
         if (coursesData[selectedField]) {
             coursesData[selectedField].forEach(field => {
                 const course = document.createElement('div');

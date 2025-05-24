@@ -20,3 +20,5 @@ document.addEventListener("DOMContentLoaded", function () {
     prevScrollPos = currentScrollPos;
   });
 });
+
+// this code represents the behaviour of header
