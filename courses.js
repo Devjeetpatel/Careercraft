@@ -1,8 +1,8 @@
 // back button function
 document.getElementById
-("back").addEventListener("click",()=>{
-    window.location.href="choice.html";
-})
+    ("back").addEventListener("click", () => {
+        window.location.href = "choice.html";
+    })
 
 // calls selectedField data and suggest course accordingly
 document.addEventListener('DOMContentLoaded', function () {
@@ -46,22 +46,32 @@ document.addEventListener('DOMContentLoaded', function () {
         };
         // display function
         if (coursesData[selectedField]) {
-            coursesData[selectedField].forEach(field => {
+            coursesData[selectedField].forEach(courses => {
                 const course = document.createElement('div');
                 course.classList.add('field');
 
                 course.innerHTML = `
                 <article class="">
                     <div class="course-title">
-                            <p class="course-name" >${field.title}</p>
+                            <p class="course-name" >${courses.title}</p>
                     </div>
                     <div class="box-inner-p">
                         <div class="">
-                            <p class="">${field.Info}</p>
+                            <p class="">${courses.Info}</p>
+                        </div>
+                        <div>
+                        <button  id=cou>Explore college<button>
                         </div>
                     </div>
                 </article>
                 `;
+
+                // stores selected cousre for further use
+                // this.getElementById(cou).addEventListener('click', function () {
+                //     localStorage.setItem('selectedcourse', courses.title);
+                //     window.location.href = 'college.html';
+                // });
+
                 coursesListContainer.appendChild(course);
 
             });

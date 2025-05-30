@@ -103,4 +103,4 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         fieldsContainer.textContent = 'No fields found for this stream.';
     }
-});
+}); 

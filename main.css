@@ -13,10 +13,10 @@
   --base-variant: #74a464;
   --text-color: #000;
   --secondary-text: rgb(192, 234, 255); */
-    --base-color: #e5e7eb;
+    --base-color: #d5d5d5;
     --base-variant: #f5f5f5;
     --text-color: #333333a0;
-    --secondary-text: rgb(167, 222, 250);
+    --secondary-text: rgb(143, 216, 253);;
 }
 
 /* secondary color container for dark mode*/
@@ -352,7 +352,11 @@ footer {
     /* margin-top: 55px; */
 }
 
-
+.add-space {
+    margin: 25px;
+    padding: 25px;
+    border-bottom: 2px solid var(--secondary-text);
+}
 
 
 
