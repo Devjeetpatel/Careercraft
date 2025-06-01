@@ -46,12 +46,12 @@ document.addEventListener('DOMContentLoaded', function () {
             // { title: "", image: "assets/it.webp" }
         ],
         Arts: [
-            { title: "Humanities & Social Sciences", image: "assets/arts/" },
-            { title: "Languages & Literature", image: "assets/arts/" },
-            { title: "Fine Arts & Performing Arts", image: "assets/arts/" },
-            { title: "Communication & Media", image: "assets/arts/" },
-            { title: "Education", image: "assets/arts/" },
-            { title: "Law and Legal Studies", image: "assets/arts/" }
+            { title: "Humanities & Social Sciences", image: "assets/humanities.jpg" },
+            { title: "Languages & Literature", image: "assets/languages.jpg" },
+            { title: "Fine Arts & Performing Arts", image: "assets/fapa.jpg" },
+            { title: "Communication & Media", image: "assets/mass.jpg" },
+            { title: "Education", image: "assets/education.jpg" },
+            { title: "Law and Legal Studies", image: "assets/law.jpg" }
             // { title: "", image: "assets/it.webp" }
             // { title: "", image: "assets/it.webp" }
 
