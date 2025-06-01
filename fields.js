@@ -31,16 +31,16 @@ document.addEventListener('DOMContentLoaded', function () {
             { title: " Education & Teaching", image: "assets/commerce/", id: "et" }
         ],
         Science: [
-            { title: "Engineering & Technology (PCM)", image: "assets/sci/engineering.webp" },
-            { title: "Medical & Allied Health Sciences (PCB)", image: "assets/sci/medical.webp" },
-            { title: "IT & Computer Science", image: "assets/sci/it.webp" },
-            { title: "Architecture & Design (PCM required)", image: "assets/sci/" },
-            { title: "Aviation", image: "assets/sci/" },
-            { title: "Psychology, Social Science & Liberal Arts", image: "assets/sci/" },
-            { title: "Law", image: "assets/sci/" },
-            { title: "Business & Management", image: "assets/sci/" },
-            { title: "Defense & Civil Services", image: "assets/sci/" },
-            { title: "Emerging Tech & Modern Fields", image: "assets/sci/" }
+            { title: "Engineering & Technology (PCM)", image: "assets/e_tpcm.jpg" },
+            { title: "Medical & Allied Health Sciences (PCB)", image: "assets/mahs.jpg" },
+            { title: "IT & Computer Science", image: "assets/itcs.jpg" },
+            { title: "Architecture & Design (PCM required)", image: "assets/ad.jpg" },
+            { title: "Aviation", image: "assets/aviation.jpg" },
+            { title: "Psychology, Social Science & Liberal Arts", image: "assets/psy.jpg" },
+            { title: "Law", image: "assets/law.jpg" },
+            { title: "Business & Management", image: "assets/business.jpg" },
+            { title: "Defense & Civil Services", image: "assets/defence.jpg" },
+            { title: "Emerging Tech & Modern Fields", image: "assets/tech.jpg" }
             // { title: "", image: "assets/it.webp" }
             // { title: "", image: "assets/it.webp" }
             // { title: "", image: "assets/it.webp" }
