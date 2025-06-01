@@ -59,8 +59,8 @@ document.addEventListener('DOMContentLoaded', function () {
         ],
         Diploma: [
             { title: "Mechanical", image: "assets/mechanical.png" },
-            { title: "Electrical", image: "assets/electrical.jpg" },
-            { title: "Civil", image: "assets/civil.jpg" }
+            { title: "Electrical", image: "assets/Electrical.jpg" },
+            { title: "Civil", image: "assets/Civil.jpg" }
         ]
     };
 
