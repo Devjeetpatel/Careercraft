@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 course.classList.add('field');
 
                 course.innerHTML = `
-                <article class="">
+                <article class="course-grid">
                     <div class="course-title">
                             <p class="course-name" >${courses.title}</p>
                     </div>
@@ -59,18 +59,20 @@ document.addEventListener('DOMContentLoaded', function () {
                         <div class="">
                             <p class="">${courses.Info}</p>
                         </div>
-                        <div>
-                        <button  id=cou>Explore college<button>
-                        </div>
+                    </div>
+                    <div class="box-inner-p">
+                        <button class="bottom-button explore-button" id="cou">Explore college</button>
                     </div>
                 </article>
                 `;
 
                 // stores selected cousre for further use
-                // this.getElementById(cou).addEventListener('click', function () {
-                //     localStorage.setItem('selectedcourse', courses.title);
-                //     window.location.href = 'college.html';
-                // });
+                const clickedbutton = course.querySelector('.explore-button');
+                clickedbutton.addEventListener('click',()=> {
+                    localStorage.setItem('selectedcourse', courses.title);
+                    window.location.href = 'college.html';
+                    console.log("title setted")
+                });
 
                 coursesListContainer.appendChild(course);
 
