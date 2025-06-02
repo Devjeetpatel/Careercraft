@@ -267,7 +267,7 @@ main {
     border-radius: 30px 30px;
     background-color: var(--base-color);
     box-shadow: 0 0 10px var(--secondary-text);
-    cursor: pointer;
+    /*cursor: pointer;*/
     display: flex;
     justify-content: center;
 }
