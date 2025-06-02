@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
         // course data to display
         const coursesData = {
             "Accounting & Finance": [
-                { title: "B.Com in Accounting and Finance", Info:"B.Com in Accounting and Finance is a 3-year undergraduate course that focuses on financial accounting, taxation, auditing, and corporate finance. It prepares students for careers in finance, banking, and accounting, and is a foundation for professional courses like CA and CFA." },
-                { title: "MBA in Finance", Info: "vhbhkrbhbshkbvhkdfb hkv hfe vh" },
+                { title: "B.Com in Accounting and Finance", Info: "B.Com in Accounting and Finance is a 3-year undergraduate course that focuses on financial accounting, taxation, auditing, and corporate finance. It prepares students for careers in finance, banking, and accounting, and is a foundation for professional courses like CA and CFA." },
+                { title: "MBA in Finance", Info: "MBA in Finance is a 2-year postgraduate program that focuses on financial management, investment analysis, and corporate finance. It prepares students for leadership roles in banking, investment, and financial services." },
                 { title: "Certified Public Accountant (CPA)", Info: "vhbhkrbhbshkbvhkdfb hkv hfe vh" },
                 { title: "Chartered Financial Analyst (CFA)", Info: "vhbhkrbhbshkbvhkdfb hkv hfe vh" },
             ],
