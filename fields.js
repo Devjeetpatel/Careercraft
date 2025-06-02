@@ -21,14 +21,14 @@ document.addEventListener('DOMContentLoaded', function () {
         Commerce: [
             { title: "Accounting & Finance", image: "assets/commerce/acc&finance.webp", id: "af" },
             { title: "Business & Management", image: "assets/commerce/business.png", id: "bm" },
-            { title: "Banking & Insurance", image: "assets/commerce/", id: "bi" },
-            { title: "Law", image: "assets/commerce/", id: "law" },
-            { title: "Economics & Statistics", image: "assets/commerce/", id: "es" },
-            { title: "Information Technology & Digital Media", image: "assets/", id: "itdm" },
-            { title: "Media & Communication", image: "assets/commerce/", id: "mc" },
-            { title: "Hotel, Travel & Hospitality Management", image: "assets/commerce/", id: "hthm" },
-            { title: " Creative Fields", image: "assets/commerce/", id: "cf" },
-            { title: " Education & Teaching", image: "assets/commerce/", id: "et" }
+            { title: "Banking & Insurance", image: "assets/banking.jpg", id: "bi" },
+            { title: "Law", image: "assets/law1.jpg", id: "law" },
+            { title: "Economics & Statistics", image: "assets/economic.jpg", id: "es" },
+            { title: "Information Technology & Digital Media", image: "assets/media.jpg", id: "itdm" },
+            { title: "Media & Communication", image: "assets/communication.jpg", id: "mc" },
+            { title: "Hotel, Travel & Hospitality Management", image: "assets/hotel.jpg", id: "hthm" },
+            { title: " Creative Fields", image: "assets/creative.jpg", id: "cf" },
+            { title: " Education & Teaching", image: "assets/education.jpg", id: "et" }
         ],
         Science: [
             { title: "Engineering & Technology (PCM)", image: "assets/e_tpcm.jpg" },
