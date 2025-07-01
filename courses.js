@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
             "Accounting & Finance": [
                 { title: "B.Com in Accounting and Finance", Info: "B.Com in Accounting and Finance is a 3-year undergraduate course that focuses on financial accounting, taxation, auditing, and corporate finance. It prepares students for careers in finance, banking, and accounting, and is a foundation for professional courses like CA and CFA." },
                 { title: "MBA in Finance", Info: "MBA in Finance is a 2-year postgraduate program that focuses on financial management, investment analysis, and corporate finance. It prepares students for leadership roles in banking, investment, and financial services." },
-                { title: "Certified Public Accountant (CPA)", Info: "" },
-                { title: "Chartered Financial Analyst (CFA)", Info: "" },
+                { title: "Certified Public Accountant (CPA)", Info: "Chartered Financial Analyst (CFA) is a globally recognized certification in investment and financial analysis. It covers portfolio management, equity research, ethics, and economics, preparing professionals for careers in investment banking, asset management, and finance." },
+                { title: "Chartered Financial Analyst (CFA)", Info: "Certified Public Accountant (CPA) is a globally recognized professional certification in accounting. It focuses on auditing, taxation, financial reporting, and regulatory frameworks, preparing individuals for advanced roles in accounting and finance." },
             ],
             "Business & Management": [
                 { title: "BBA (Bachelor of Business Administration)", Info: "vhbhkrbhbshkbvhkdfb hkv hfe vh" },
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (coursesData[selectedField]) {
             coursesData[selectedField].forEach(courses => {
                 const course = document.createElement('div');
-                course.classList.add('field');
+                course.classList.add('course-list');
 
                 course.innerHTML = `
                 <article class="course-grid">

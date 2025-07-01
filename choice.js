@@ -14,13 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (selectedField) {
         fieldNameElement.textContent = selectedField;
 
-        // const exploreCourseButton = document.createElement('button');
-        // exploreCourseButton.textContent = 'Explore Course';
-        // exploreCourseButton.addEventListener('click', function () {
-        //     localStorage.setItem('selectedChoice', 'Course');
-        //     window.location.href = 'courses.html';
-        // });
-
         const exploreCourseButton = document.createElement('button');
         exploreCourseButton.classList.add('stream-button');
         exploreCourseButton.textContent = 'Explore Course';
@@ -28,14 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
             localStorage.setItem('selectedChoice', 'Course');
             window.location.href = 'courses.html';
         });
-
-        // const exploreCareerButton = document.createElement('button');
-        // // exploreCareerButton.classList.add('stream-button');
-        // exploreCareerButton.textContent = 'Explore Career';
-        // exploreCareerButton.addEventListener('click', function () {
-        //     localStorage.setItem('selectedChoice', 'Career');
-        //     window.location.href = 'careers.html';
-        // });
 
         const exploreCareerButton = document.createElement('button');
         exploreCareerButton.classList.add('stream-button');

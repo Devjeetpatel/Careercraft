@@ -1,5 +1,4 @@
 {
-
   document.getElementById("com").addEventListener("click", () => {
     localStorage.setItem("selectedStream", "Commerce");
     window.location.href = "fields.html";

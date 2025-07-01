@@ -323,11 +323,24 @@ main {
 
 .course-grid {
     display: grid;
-    grid-template-rows: 95px 190px 95px;
+    grid-template-rows: 100px 200px 100px;
     justify-content: center;
     align-items: center;
 }
 
+.course-list {
+    height: 400px;
+    width: 340px;
+    /* height: 45vh;
+    width: 23vw; */
+    /* border: 2px solid white; */
+    border-radius: 30px 30px;
+    background-color: var(--base-color);
+    box-shadow: 0 0 10px var(--secondary-text);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
 /* back button style */
 .nav-button {
     height: 45px;
@@ -339,7 +352,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    cursor: pointer;
 }
 
 .myarrow:hover {
