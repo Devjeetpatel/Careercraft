@@ -420,6 +420,15 @@ footer {
 
 
 
+/* Hide/show sections for SPA */
+.page-section {
+    display: none;
+}
+
+.page-section.active {
+    display: block;
+}
+
 /* .typing-text {
     margin-left: 120px;
     display: block;
